@@ -67,7 +67,7 @@ async def news(interaction: discord.Interaction, title: str, description: str):
                     failed_count += 1
                 if sent_count + failed_count == len(tasks):
                     break
-                await response_message.edit(content=f"⌛ ニュースの送信中...\n✅ 送信成功: {sent_count}人\n❌ 送信失敗: {failed_count}人")
+                # await response_message.edit(content=f"⌛ ニュースの送信中...\n✅ 送信成功: {sent_count}人\n❌ 送信失敗: {failed_count}人")
             except:
                 break
 
